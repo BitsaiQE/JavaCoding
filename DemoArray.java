@@ -12,7 +12,7 @@ public class DemoArray {
         for (int i =0; i < mystudentList.length;i++){
         try {
 
-            //System.out.println(i+":"+mystudentList[i]);
+            System.out.println(i+":"+mystudentList[i]);
             System.out.println(mystudentList[11]);
         } catch (Exception e){
            // System.out.println(e);
