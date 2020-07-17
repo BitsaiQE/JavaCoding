@@ -1,6 +1,6 @@
 package com.javacoding;
 
-public class Employee {
+public class   Employee {
     String name;
     int eID;
     int salary;

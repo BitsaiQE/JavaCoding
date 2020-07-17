@@ -4,6 +4,10 @@ public abstract class Employe {
     private String eName;
     private String address;
     private int eID;
+    private int  noExtrahours;
+    private float payPerHour;
+    private float actualSal;
+    private float basicPay;
 
     public Employe(String eName,String address,int eID){
         System.out.println("employee constrctor");
@@ -15,7 +19,10 @@ public abstract class Employe {
     }
 
     public double computePay(){
-        System.out.println( "pay compuatation");
+
+        float actualSal = (basicPay + (noExtrahours *  payPerHour));
+
+        System.out.println( "pay compuatation :"+actualSal);
         return 0.0;
     }
 
@@ -30,7 +37,7 @@ public abstract class Employe {
 
 
     public String toString() {
-        return eName + " " + address + "" + eID;
+        return eName + " " + address + " " + eID;
     }
 
     public String getAddress(){

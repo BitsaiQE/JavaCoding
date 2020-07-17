@@ -10,10 +10,11 @@ public class EmpSalary extends Employe {
 
     public void mailcheck(){
         System.out.println("salary class mail check");
-        System.out.println("Mailing check to "+geteID()+ "with salary"+ salary);
+        System.out.println("Mailing check to  :"+geteName()+"   " +" with salary "+ salary);
     }
 
-    public double getSalary(){
+    public double getSalary()
+    {
         return salary;
     }
 
@@ -24,7 +25,7 @@ public class EmpSalary extends Employe {
     }
 
     public double computePay(){
-        System.out.println("computing salary pfay for "+ geteName());
+        System.out.println("computing salary pay for "+ geteName() + geteID());
         return salary;
     }
 }
